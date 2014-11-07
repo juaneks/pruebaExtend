@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Prueba extend</title>
+	<style type="text/css">
+	body{ text-align: center;}
+		.cajita {  width: 200px; height: 150px
+			; background: #232323; color: #fff; margin: 2em auto; text-align: center;}
+	</style>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="javelin.js"></script>
+	<script type="text/javascript">
+	$(document).on('ready', function(){
+		cajas = $('.cajita');
+		//$.javelin(cajas);
+		$('#boton').on('click',function(){
+			$('.cajita').javelin({
+				ancho:500,
+				alto:50,
+				colorFondo: '#ccc'
+			});
+		});
+	});
+	</script>
+</head>
+<body>
+	<div class="cajita">
+		caja 1
+	</div>
+	<div class="cajita">
+		caja 2
+	</div>
+	<div class="cajita">
+		caja 3
+	</div>
+	<button id="boton">Probar</button>
+</body>
+</html>
