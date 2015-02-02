@@ -1,5 +1,5 @@
 
-// prueba con extend
+// prueba con extend -- versionado el 02/02/2015
 
 $.extend({
 	javelin : function(elemento){
@@ -24,5 +24,6 @@ $.fn.javelin = function(parametros){
 
 	$.each(this,function(index,value){
 		$(this).html('cambio la caja #'+(index+1)).css('color','#f00');
+		console.log($(this));
 	});
 }
